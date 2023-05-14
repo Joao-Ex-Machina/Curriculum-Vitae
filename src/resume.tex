@@ -1,0 +1,281 @@
+\documentclass[singlesided,
+               %doublesided,
+               paper=a4,
+               fontsize=9.3pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{João Barreiros Coelho Rodrigues}
+\tagline{I'm a 20 years old Electrical and Computer Engineering undergraduate student at IST-ULisboa.\\ My main academic focus are Computer Architectures, Embedded systems and Electronic Design. \\I'm also interested in procedure oriented programming focused on algorithm applications and \\ optimization, computer networks and systems programming}
+\photo[round]{johno.jpg}{\dimexpr \headerheight-\marginbottom+0.45cm}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Profile \& Contact}
+    \birthday{September 16th 2002}
+    \nationality{Portuguese}
+    \email{joaobarreiroscoelhorodrigues@tecnico.ulisboa.pt}
+    \phone{+351 964432074}
+    \location{Calçada da Quintinha nº18 1ºESQ, Campolide}
+    \location{1070-225 LISBOA}
+    %\vspace{0.5em}
+    \github{@Joao-Ex-Machina}{https://github.com/Joao-Ex-Machina}
+    \linkedin{João Barreiros C. Rodrigues}{https://www.linkedin.com/in/joaobcrodrigues/}
+    
+    \section{Technical Skills}
+    \skillsection{Programming}
+    \skill{C}{7}
+    \skill{UNIX Shell}{6}
+    \skill{RISC-V Assembly}{5}
+    \skill{MATLAB}{5}
+    \skill{C++}{4}
+    \skill{R}{3}
+    \skill{x86 Assembly}{2}
+    \skill{VHDL}{2}
+    
+    
+    \vspace{0.3em}
+    \skillsection{Operating Systems}
+    \skill{GNU/Linux}{7}
+    \skill{LineageOS}{7}
+    \skill{Microsoft Windows}{6}
+    \skill{TempleOS}{4}
+    
+    
+    
+    
+    
+    \vspace{0.3em}
+    \skillsection{Software \& Tools}
+    \skill{Git}{7}
+    \skill{Vim/Neovim}{6}
+    \skill{LaTeX}{5}
+    \skill{GNU Octave}{5}
+    \skill{KiCAD / EDA tools}{4}
+    \skill{QEMU / virt. tools}{4}
+    \skill{Ripes}{4}
+    \skill{Vivado}{3}
+    
+    \vspace{0.3em}
+    \skillsection{Area softskills}
+    Casual technical support for Arch and other GNU/Linux distribution users.\\
+    Casual firmware-level support.\\
+    Casual Hardware repair and upgrade (Thinkpad T430, etc. ) .\\
+    Eletronics repair (Power supplies, antennas, etc.).
+    
+    \vspace{0.4em}
+    \skillsection{Languages}
+    \skill{Portuguese}{8}
+    \skill{English}{7}
+    \skill{German}{3}
+    
+    
+    %\section{Certificates}
+    %\simpleskill{AWS certified cloud practitioner}
+    %\simpleskill{AWS certified ML Specialist}
+    %\simpleskill{Databricks Lakehouse Platform}
+    
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Ingenuity}
+    \tag{Logical thinking}
+    \tag{Teamwork}
+    \tag{Troubleshooting}
+    \tag{Public Speaking}
+ 
+    
+
+}
+\mainbar{
+    \section[\faGears]{Work history}
+    \job{08/2022-}
+        {HackerSchool}
+        {President}
+        {Head developer of the student group social and technical spheres. \\
+        Commander of a team of over ten people to manage inside and outside communication, marketing, internal projects, material and human resources management.\\
+        The main focus of our admnistration is to revive the hacker spirit and culture inside HackerSchool through the adoption of a  series of pro-open learning, pro-free and open source software and hardware policies}
+
+    \job{03/2021 - }
+        {HackerSchool}
+        {Developer}
+        {Head Developer of the Electrical and Computer division of the \textbf{Free Libre Open Source 3D printer} Project, which focuses on the repair and rehabilitation of an old HelloBEE Prusa 3D printer through hardware repair (mainly mechanical assembly, and power supply repair) and firmware updates (Custom upgrade of Marlin firmware).
+        Head Developer, together with other IST-ULisboa/HackerSchool CSE students, of a \textbf{compact and low-cost NFC access controller} based on Raspberry Pi and ESP8266 for the Study Room (LTI) of the Mechanical Engineering Department at IST. We will probably add this system to the Electrical Machines lab of the Electrical e Computer Engineering Department in the near future.
+        I have recently started together with other IST-ULisboa/HackerSchool ECE students a small project to make a low-cost, free and open-source \textbf{cartridge-input handheld console based on a AVR CPU }. Its main purpose is to use this console as a project for future workshops and lectures.
+        I have also taught internal and recruitment workshops in LaTeX, Arduino and Eletronics.}
+    
+    \section[\faMortarBoard]{Education}
+    \job{09/2020 - 08/2023}
+        {Instituto Superior Técnico \\ Universidade de Lisboa}
+        {Electrical and Computer Engineering \\ Bologna undergraduate}
+        {Finished first undergrad year with a average grade of 14 out of 20. \\
+        Finished second undergrad year with a average grade of 14 out of 20. \\
+        Relevant curricular units included in the degree and respective final grade(s): \\
+        \textbf{Digital Systems}: 17/20 \\
+        \textbf{Computer Architectures}: 17/20 \\
+        \textbf{Programming}: \href{https://github.com/Joao-Ex-Machina/Covid19_MEEC_FINAL}{2nd project:} 18/20 | final grade: 15/20 \\ 
+         \textbf{Algorithms and Data structures}: \href{https://github.com/Joao-Ex-Machina/Raiders-of-all-Pyramids}{project:} 18.3/20 | final grade: 15/20 \\
+         \textbf{Computer Networks and the Internet}: \href{https://github.com/Joao-Ex-Machina/Tree-Network-Client}{project:} 17/20 | final grade: 16/20
+        }
+    \section{Extracurricular Activities}
+        \textbf{Activism and Voluntary Work}: Since February 2023 I have been a member of ANSOL (Associação Nacional para o Software Livre) the portuguese associate organization of FSFE (Free Software Foundation Europe). ANSOL is a non-profit association dedicated to the promotion and development of Computing Freedom. I was a volunteer at Lisbon Mini-MakerFaire 2023 helping mostly with resources and space monitoring. I have also been a regular participant/monitor/helper at the Linux Install Parties organized at Instituto Superior Técnico. I am also dedicated to the hacker/maker cause, promoting hacker culture and giving my first talk on the matter: \href{https://pt2023.mini.debconf.org/talks/26-hacker-culture-at-ist-the-hswatch-example/}{\textit{Hacker Culture at IST}}during MiniDebConf Lisbon 2023
+        \\[0.2cm] \textbf{Sports}:
+        I practiced Judo for six years, reaching the third kyu.\\
+        I then switched to Muay Thai, which I practiced for around three years.\\
+        From 2017 to 2020 I practiced archery as a School Sport.\\
+        In 2018 I won, together with my two teammates, the second place in the archery district school competition.\\ 
+        In 2019 I was appointed referee for the regional school competition.
+        \\[0.2cm] \textbf{Learning}: I maintain natural curiosity and enjoyment for esoteric programming languages such as brainf*ck, chicken and whitespace. As of now I am the most excited to learn Zig, since it can be interpreted as a modern sucessor to C.
+        \\[0.2cm] \textbf{Leisure}: I've a been a fan of tabletop role-playing games (such as Dungeons and Dragons and Call of Cthulhu) for a long time. I'm also a casual player of chess.\\
+        I'm a avid reader of medieval fantasy (mostly J.R.R Tolkien and George R. R. Martin) as well as goth and weird fiction (particularly Edgar Allan Poe and H.P. Lovecraft).\\
+        I'm a casual player of acoustic and electric guitar with a preference for heavy metal.
+        
+}
+\makebody
+\newpage
+\highlightbar{
+    \vspace{4cm}
+    %\section{Profile \& Contact}
+    \hspace{4cm}
+    %\birthday{September 16th 2002}
+    %\nationality{Portuguese}
+    %\email{joaobarreiroscoelhorodrigues@tecnico.ulisboa.pt}
+    %\phone{+351 96443074}
+    %\location{Calçada da Quintinha nº18 1ºESQ, Campolide}
+    %\location{1070-225 LISBOA}
+   \vspace{0.5em}
+   % \github{@Joao-Ex-Machina}{https://github.com/Joao-Ex-Machina}
+   % \linkedin{João Barreiros C. Rodrigues}{https://www.linkedin.com/in/joaobcrodrigues/}
+    
+    %\section{Skills}
+    %\skillsection{Programming}
+    %\skill{Single-Threaded C}{4}
+    %\skill{UNIX Shell}{3}
+    %\skill{RISC-V Assembly}{3}
+    %\skill{R}{2}
+    %\skill{x86 Assembly}{2}
+    %\skill{Single-Threaded C++}{2}
+    %\skill{VHDL}{2}
+    %\skill{MATLAB}{2}
+    %\skill{LaTeX}{4}
+    
+    %\vspace{0.5em}
+    %\skillsection{Operating Systems}
+    %\skill{GNU/Linux}{4}
+    %\skill{LineageOS}{3}
+    %\skill{Microsoft Windows}{3}
+    %\skill{Google Android}{3}
+    %\skill{TempleOS}{2}
+    
+    
+    
+    
+    
+    %\vspace{0.5em}
+    %\skillsection{Software \& Tools}
+    %\skill{Git}{4}
+    %\skill{Neovim}{3}
+    %\skill{LibreOffice Suite}{3}
+    %\skill{GNU Octave}{2}
+   % \skill{Ripes}{2}
+    %\skill{Vivado}{2}
+    
+    %\vspace{0.5em}
+    %\skillsection{Area softskills}
+    %Casual technical support for Arch and other GNU/Linux distribution users.\\
+    %Casual firmware-level support.\\
+    %Casual Hardware repair and upgrade (Thinkpad T430, etc. ) .\\
+    %Eletronics repair (Power supplies, antennas, etc.).
+    
+    %\vspace{0.5em}
+    %\skillsection{Languages}
+    %\skill{Portuguese}{5}
+    %\skill{English}{4}
+   % \skill{German}{2}
+    
+    
+    %\section{Certificates}
+    %\simpleskill{AWS certified cloud practitioner}
+    %\simpleskill{AWS certified ML Specialist}
+    %\simpleskill{Databricks Lakehouse Platform}
+    
+    %\section{General Skills}
+    %\smallskip % additional skip because tag outlines use up space
+    %\tag{Team work}
+    %\tag{Support}
+    %\tag{Problem Solving}
+    %\tag{Social interaction}
+    %\tag{Perseverance}
+    
+
+}
+\name{HISTORIC}
+\tagline{Historical section of my Curriculum Vitae. Adds non-essential or since deprecated information \\ about education and work history.\\ \\ \\}
+\photo[round]{johno.jpg}{\dimexpr \headerheight-\marginbottom+0.45cm}
+\makeheader
+\highlightbar{
+\section{Other Technical Skills}
+\skillsection{Software \& Tools}
+    \skill{LibreOffice Suite}{5}
+    \skill{SIMULINK}{4}
+}
+    
+\mainbar{
+ \section[\faMortarBoard]{Education}
+     \job{09/2017 - 08/2020}
+        {Escola Secundária \\ Maria Amália Vaz de Carvalho}
+        {Scientific and Humanistic \\ High School Diploma- \\ Science and Technology}
+        {Received, in 2018, both academic merit and civil merit certificates . \\
+        Published in 2018 and 2020 two philosophical treaties on political philosophy and the scientific method, respectively in the yearly school publication on philosophy and psychology - \textit{Fragmente}\\ Finished high school with a CNAES average grade of 18.3/20}
+        
+\section[\faGears]{Work history}
+        \job{09/2021-08/2022}
+        {HackerSchool}
+        {Board Member \\Marketing and Communication}
+        {Proponent of software reforms inside HackerSchool (switch to FOSS alternatives). \\ Developer of marketing material such as merchandise, stickers and flyers. Establishment of connections with other student groups and enterprises.}
+        }
+    \makebody
+
+\end{document}
